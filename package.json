@@ -1,6 +1,6 @@
 {
   "name": "jarvis-sdk",
-  "version": "1.2.9",
+  "version": "1.0.0",
   "description": "",
   "main": "dist/jarvis-sdk.umd.js",
   "module": "dist/jarvis-sdk.umd.js",
