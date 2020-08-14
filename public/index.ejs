@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jarvis SDK Test</title>
+  <!-- <script src="../src/index.js" type="model"></script> -->
+  <style>
+    div {
+      height: 100px;
+      width: 100px;
+      background: red;
+    }
+  </style>
+  <script>
+    // document.addEventListener('readystatechange', function () {
+    //   console.log('readyState : ' + document.readyState)
+    // })
+    // window.addEventListener('error', e => {
+    //   console.log(e)
+    // }, true)
+    // document.addEventListener('error', e => {
+    //   console.log(e)
+    // })
+  </script>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+
+<body>
+  <div elementtiming id="tianna">
+    <p class="haha">
+      <input type="text" value="ssss">
+    </p>
+  </div>
+  <audio src="1.mp3"></audio>
+  <!-- <div>hello</div>
+  <div id="diasdasdv">点击</div>
+  <img src="1.png">
+  <video class="" src="1.mv" initial-time="0" autoplay="false" loop="false" muted="false" direction="0" 
+    bindplay="" bindpause="" bindended="" bindtimeupdate="" bindwaiting="" binderror="">
+  </video>
+  <audio src="1.mp3"></audio>
+  <script src="1.js"></script>
+  <link rel="stylesheet" href="styles.css"> -->
+  <script>
+    // gennerator
+    function * F () {
+      throw new Error('gennerator-throw在函数体外抛出的错误')
+      yield 1
+      return 'gennerator-value'
+    }
+
+    var f = F()
+
+    f.next()
+
+    // promise
+    async function asddad () {
+      const a = 1
+      const b = await a + 2
+
+      throw new Error('async error')
+    }
+    asddad()
+
+    new Promise((resolve, reject) => {
+      resolve('')
+    })
+      .then((data) => {
+        throw new Error()
+      })
+    
+    new Promise((resolve, reject) => {
+      throw new Error()
+    })
+
+    // var oDiv = document.getElementById('diasdasdv')
+    // oDiv.onclick = function (e) {
+    //   console.log('成功')
+    // }
+    // encodeURI('adadadsa/As.asd.a  qq  q q     ')
+    // var o = new 10()
+    // var a = new eval()
+    // new Array(-1)
+    // console.log(aaaaaa)
+    fetch('http://localhost:7043/record/test').then(res=> {
+      console.log(res)
+      console.log(JSON.parse({a:1}))
+    }).catch((err) => {
+      console.log(err)
+    })
+  </script>
+  <!-- <script >
+    console.log('11111111111111111')
+    aaa
+    console.log('2222')
+  </script>
+  <script >
+    console.log('333333')
+  </script> -->
+</body>
+
+</html>
